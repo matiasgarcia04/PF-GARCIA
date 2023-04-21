@@ -25,7 +25,6 @@ h2 {text-align: center;
 text-decoration: underline;
 }
 
-
 footer {
     position: sticky;
     bottom: 0%;
@@ -46,7 +45,7 @@ footer {
      "footer footer";
      grid-template-rows: auto;
      grid-template-columns: 20% auto ;
-     justify-items: center;
+     justify-items: left;
 }
 #header {
     grid-area: header;
@@ -65,4 +64,64 @@ nav {
 }
 footer{
     grid-area: footer;
+}
+/*responsive*/
+@media (max-width: 480px)
+{
+    html { background-color: rgb(15, 15, 14);
+        color: rgb(230, 230, 241);
+        font-family: Verdana;
+        font-size: 16px;
+        max-width: 100%;
+        height: auto;
+        }
+h1{ color: white;}
+li { padding-bottom: 2px;}
+    a {
+        color: rgb(245, 214, 214);
+    }
+    a:active{
+        color: red;
+    }
+
+    footer {
+        background-color: rgb(15, 15, 14);
+    }
+    #grid { 
+        display: grid;
+        grid-template-areas: 
+         "menu"
+         "header"
+          "main-1"
+         "section-1"
+         "section-2"
+         "footer";
+         grid-template-rows: auto;
+         grid-template-columns: auto ;
+         justify-items: left;
+    }
+}
+@media (min-width: 481px) and (max-width: 992px) {
+    html { background-color: rgb(9, 47, 150);
+        color: rgb(230, 230, 241);
+        font-family: Verdana;
+        font-size: 100%;
+        text-align: left;
+        }
+    a {
+        color: rgb(245, 214, 214);
+    }
+    a:active{
+        color: rgb(8, 8, 8);
+    }
+    h1{color: white;}
+    footer {
+        background-color: rgb(9, 47, 150);
+    }
+    * {
+        margin: 1px;
+        padding: 0px;
+    }
+    li { padding-bottom: 5px;
+    margin-block: 20px;}
 }
