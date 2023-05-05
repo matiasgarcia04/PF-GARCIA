@@ -1,0 +1,38 @@
+header {
+    width: 96%;
+    margin: 0 auto;
+    align-items: center;
+}
+h1 { text-align: center;
+ color: black;}
+h2 {text-align: center;
+text-decoration: underline;
+}
+
+#logo-inicio {
+    width: 100%;
+    height: auto;
+    }
+
+.menu{
+    max-width: 100%;
+    ul{
+        padding-bottom: 20px;
+        list-style: none;
+        :hover{
+            background-color: rgb(179, 171, 171);
+            color: black;
+        }
+        li{
+            margin: 30px;
+            text-align: center;
+            border-color: rgb(131, 65, 65);
+            border-width: 1px;
+            border-style: solid;
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+}

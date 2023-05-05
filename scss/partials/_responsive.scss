@@ -1,0 +1,20 @@
+@media (min-width:768px){
+  html{
+    font-size: 20px;
+    margin: 10px;
+    .menu{
+      width: 100%;
+}
+}
+
+iframe{
+    height: 500px;
+}
+}
+
+@media (min-width:1024px){
+    .main-1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

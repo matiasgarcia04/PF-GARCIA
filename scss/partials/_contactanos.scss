@@ -1,0 +1,16 @@
+form{
+    text-align: left;
+    label{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(131, 65, 65);
+    }
+    input, textarea{
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(131, 65, 65);
+        background-color: rgb(15, 15, 14);
+        text-align: center;
+        color: white;
+    }
+}

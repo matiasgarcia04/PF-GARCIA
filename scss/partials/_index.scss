@@ -1,0 +1,19 @@
+
+.main-1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h2{
+        margin-bottom: 20px;
+    }
+}
+
+.img-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+        img{
+            width: 50%;
+
+        }
+    }
