@@ -1,0 +1,54 @@
+.menu {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  animation-duration: 3s;
+  animation-name: animacion1;
+}
+@keyframes animacion1 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#logo-inicio {
+  animation-duration: 3s;
+  animation-name: animacion2;
+}
+@keyframes animacion2 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: rgb(15, 15, 14);
+}
+
+.card {
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=animaciones.css.map */

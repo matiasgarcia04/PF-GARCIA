@@ -67,12 +67,11 @@ footer{
 .card {
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
-    width:420px;
+    max-width:96%;
     border: 1px solid lightgray;
     box-shadow: 2px 2px 8px 4px white;
     border-radius:15px;
-    margin: 20px;
+    margin: 30px;
 }
 .menu{
     width: 70%;

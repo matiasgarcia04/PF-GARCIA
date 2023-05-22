@@ -71,12 +71,11 @@ footer {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 420px;
+  max-width: 96%;
   border: 1px solid lightgray;
   box-shadow: 2px 2px 8px 4px white;
   border-radius: 15px;
-  margin: 20px;
+  margin: 30px;
 }
 
 .menu {
@@ -111,20 +110,28 @@ h2 {
   padding-bottom: 20px;
   list-style: none;
 }
-.menu ul :hover {
-  background-color: rgb(179, 171, 171);
-  color: black;
-}
 .menu ul li {
   margin: 30px;
   text-align: center;
   border-color: rgb(131, 65, 65);
   border-width: 1px;
   border-style: solid;
+  box-shadow: 2px 2px white;
+  text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
+}
+
+body {
+  background-color: rgb(15, 15, 14);
+  color: rgb(230, 230, 241);
+  font-family: Verdana;
+  font-size: 16px;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 .main-1 {
@@ -143,6 +150,13 @@ a {
 }
 .img-flex img {
   width: 50%;
+  border-radius: 25%;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 500px;
+  max-height: 100%;
 }
 
 footer {
@@ -155,13 +169,13 @@ footer {
   width: 100%;
 }
 
-form {
-  text-align: left;
+h3 {
+  text-decoration: underline;
 }
-form label {
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(131, 65, 65);
+
+form {
+  text-align: center;
+  padding: 10px;
 }
 form input, form textarea {
   border-width: 2px;
@@ -170,6 +184,25 @@ form input, form textarea {
   background-color: rgb(15, 15, 14);
   text-align: center;
   color: white;
+  width: 60%;
+  margin-bottom: 20px;
+  padding: 7px;
+}
+form input::placeholder, form textarea::placeholder {
+  color: rgb(240, 233, 233);
+  font-size: 16px;
+}
+form textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+form .boton {
+  background-color: rgb(131, 65, 65);
+  box-shadow: 4px 4px white;
+}
+form .boton:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -177,8 +210,14 @@ form input, form textarea {
     font-size: 20px;
     margin: 10px;
   }
+  html header img {
+    max-height: 500px;
+  }
   html .menu {
     width: 100%;
+  }
+  html .card {
+    max-width: 550px;
   }
   iframe {
     height: 500px;
@@ -189,6 +228,58 @@ form input, form textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.menu {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  animation-duration: 3s;
+  animation-name: animacion1;
+}
+@keyframes animacion1 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#logo-inicio {
+  animation-duration: 3s;
+  animation-name: animacion2;
+}
+@keyframes animacion2 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: rgb(15, 15, 14);
+}
+
+.card {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 footer {
     position: sticky;
     bottom: 0%;
@@ -5,5 +7,5 @@ footer {
     z-index: 1;
    text-align: center;
    font-size: small;
-   width:100%;
+   width:$total-100;
 }
